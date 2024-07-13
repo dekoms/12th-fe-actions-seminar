@@ -12,10 +12,10 @@ jobs:
       DISABLE_ESLINT_PLUGIN: true
     steps:
       - uses: actions/checkout@v3 # feature 브랜치의 코드 가져오기
-      - uses: actions/setup-node@3.5.1  # node 세팅
+      - uses: actions/setup-node@3.5.1 # node 세팅
         with:
           node-version: "21.2.0"
       - name: Install dependencies
         run: npm install
-      - name Try build
+      - name: Try build
         run: npm run build
